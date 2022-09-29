@@ -3,7 +3,7 @@ pipeline{
 	stages {
 		stage ('vcs'){
 			steps {
-				git branch: 'REL_INT_1.0', URL: 'https://github.com/subramanyamgb/spring-petclinic.git'
+				git branch: 'REL_INT_1.0', url: 'https://github.com/subramanyamgb/spring-petclinic.git'
 			}
 		}
 		stage('build') {
